@@ -11,15 +11,16 @@ Blueprint : consider it as mini-app inside main application. it helps in splitti
 
 Blueprint needs to be registerd inside main application.
 
+Now coming back to hooks ...
 
 Think of Flask hooks as automatic function that run at specific stage of request/response lifecycle. we don't have to call this func manually, flask calls them for us. 
 
 
-How do place these hooks?
+How do use these hooks?
 
 Hooks can be global (app level) or local (blueprint level)
 
-Inside app.py , we have two app level hooks : 
+Inside our app.py , we have two app level hooks : 
 
 * before_request : runs before every request
 * after_request : runs after every request
